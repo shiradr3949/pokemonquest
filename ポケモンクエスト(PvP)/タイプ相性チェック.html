@@ -1,0 +1,117 @@
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>タイプ相性チェック</title>
+ <script src="タイプ相性チェックβ.js"></script>
+ <link rel="stylesheet" href="タイプ相性チェック.css">
+ <link rel="icon" href="../ポケモンクエスト画像/モンスターボール.png">
+</head>
+<body>
+ <p class="sobaba"><a href="../../../../htmlファイル/試作まとめβ.html" class="soba">Linkターミナル</a> &gt; <a href="../../クイズPokèmonL2.html" class="soba">Pokèmonリスト</a> &gt; タイプ相性チェック</p>
+ <h4>効果はばつぐんだ！！…ダメージ2.56倍</h4>
+ <h4>効果はばつぐんだ！…ダメージ1.6倍</h4>
+ <h4>(表示なし)…ダメージ等倍</h4>
+ <h4>効果はいまひとつのようだ。…ダメージ0.63倍</h4>
+ <h4>効果はいまひとつのようだ…。…ダメージ0.244倍</h4>
+ <h4>効果はないようだ…。…ダメージ0倍</h4>
+ <p>攻撃技のタイプ</p>
+ <div>
+  <select id="skilltype" class="type1" onclick="test1();">
+   <option value="ノーマル" style="color: #BBBBBB">ノーマル</option>
+   <option value="かくとう" style="color: #FF9900">かくとう</option>
+   <option value="どく" style="color: #A600FF">どく</option>
+   <option value="じめん" style="color: #CF9E4E">じめん</option>
+   <option value="ひこう" style="color: #ABBFF3">ひこう</option>
+   <option value="むし" style="color: #81EC16">むし</option>
+   <option value="いわ" style="color: #9A6100">いわ</option>
+   <option value="ゴースト" style="color: #300770">ゴースト</option>
+   <option value="はがね" style="color: #999999">はがね</option>
+   <option value="ほのお" style="color: #FF421C">ほのお</option>
+   <option value="みず" style="color: #028DFF">みず</option>
+   <option value="でんき" style="color: #FFE000">でんき</option>
+   <option value="くさ" style="color: #55D600">くさ</option>
+   <option value="こおり" style="color: #44D3FF">こおり</option>
+   <option value="エスパー" style="color: #FF8DE8">エスパー</option>
+   <option value="ドラゴン" style="color: #4954A9">ドラゴン</option>
+   <option value="あく" style="color: #452222">あく</option>
+   <option value="フェアリー" style="color: #FF58B9">フェアリー</option>
+  </select>
+ </div>
+ <p>相手のポケモンのタイプ①</p>
+ <div>
+  <select id="bodytype1" class="type1" onclick="test2();">
+   <option value="ノーマル" style="color: #BBBBBB">ノーマル</option>
+   <option value="かくとう" style="color: #FF9900">かくとう</option>
+   <option value="どく" style="color: #A600FF">どく</option>
+   <option value="じめん" style="color: #CF9E4E">じめん</option>
+   <option value="ひこう" style="color: #ABBFF3">ひこう</option>
+   <option value="むし" style="color: #81EC16">むし</option>
+   <option value="いわ" style="color: #9A6100">いわ</option>
+   <option value="ゴースト" style="color: #300770">ゴースト</option>
+   <option value="はがね" style="color: #999999">はがね</option>
+   <option value="ほのお" style="color: #FF421C">ほのお</option>
+   <option value="みず" style="color: #028DFF">みず</option>
+   <option value="でんき" style="color: #FFE000">でんき</option>
+   <option value="くさ" style="color: #55D600">くさ</option>
+   <option value="こおり" style="color: #44D3FF">こおり</option>
+   <option value="エスパー" style="color: #FF8DE8">エスパー</option>
+   <option value="ドラゴン" style="color: #4954A9">ドラゴン</option>
+   <option value="あく" style="color: #452222">あく</option>
+   <option value="フェアリー" style="color: #FF58B9">フェアリー</option>
+  </select>
+ </div>
+ <p>相手のポケモンのタイプ②</p>
+ <div>
+  <select id="bodytype2" class="type2" onclick="test3();">
+   <option value="ノーマル" style="color: #BBBBBB">ノーマル</option>
+   <option value="かくとう" style="color: #FF9900" selected>かくとう</option>
+   <option value="どく" style="color: #A600FF">どく</option>
+   <option value="じめん" style="color: #CF9E4E">じめん</option>
+   <option value="ひこう" style="color: #ABBFF3">ひこう</option>
+   <option value="むし" style="color: #81EC16">むし</option>
+   <option value="いわ" style="color: #9A6100">いわ</option>
+   <option value="ゴースト" style="color: #300770">ゴースト</option>
+   <option value="はがね" style="color: #999999">はがね</option>
+   <option value="ほのお" style="color: #FF421C">ほのお</option>
+   <option value="みず" style="color: #028DFF">みず</option>
+   <option value="でんき" style="color: #FFE000">でんき</option>
+   <option value="くさ" style="color: #55D600">くさ</option>
+   <option value="こおり" style="color: #44D3FF">こおり</option>
+   <option value="エスパー" style="color: #FF8DE8">エスパー</option>
+   <option value="ドラゴン" style="color: #4954A9">ドラゴン</option>
+   <option value="あく" style="color: #452222">あく</option>
+   <option value="フェアリー" style="color: #FF58B9">フェアリー</option>
+  </select>
+ </div>
+ <p>備考①</p>
+ <div>
+  <select style="font-size: 25px">
+   <option valus="かたやぶり">味方の特性がかたやぶり</option>
+   <option valus="ターボブレイズ">味方の特性がターボブレイズ</option>
+   <option valus="テラボルテージ">味方の特性がテラボルテージ</option>
+   <option value="スカイスキン">味方の特性がスカイスキン</option>
+   <option value="フェアリースキン">味方の特性がフェアリースキン</option>
+   <option value="特になし" selected>特になし</option>
+  </select>
+ </div>
+ <p>備考②</p>
+ <div>
+  <select style="font-size: 25px">
+   <option value="ふゆう">相手の特性がふゆう</option>
+   <option value="特になし" selected>特になし</option>
+  </select>
+ </div>
+ <p>備考③</p>
+ <div>
+  <select style="font-size: 25px">
+   <option value="skyoff">相手がはねやすめをしたターン</option>
+   <option value="elecout">相手がでんこうそうげきを発動した後</option>
+   <option value="特になし" selected>特になし</option>
+  </select>
+ </div>
+ <p> </p>
+ <div>
+  <input type="button" onclick="typetestfor();" value="OK" style="font-size: 40px">
+ </div>
+</body>
+</html>

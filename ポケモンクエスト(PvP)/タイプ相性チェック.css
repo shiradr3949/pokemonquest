@@ -1,0 +1,21 @@
+.type1 {
+     font-size: 25px;
+     color: #CCCCCC;
+}
+
+.type2 {
+     font-size: 25px;
+     color: #FF9900;
+}
+
+.sobaba {
+       font-size: 13px;
+       background-color: #F2F2E5;
+}
+
+/*リンク*/
+.soba {
+     font-size: 13px;
+     color: #0088BB;
+}
+.soba:hover { color: #FF00FF; }
